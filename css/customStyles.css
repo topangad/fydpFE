@@ -1,0 +1,84 @@
+html { 
+
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+body {
+//background: url(../images/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:white;
+
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+.fill {
+	min-height:100%;
+	height:100%;
+}
+.div-panel {
+	border:3px solid;
+ border-color:blue;
+ border-radius:5px;
+}
+/* For small screen */
+.row :nth-child(even){
+  background-color: #dcdcdc;
+}
+.row :nth-child(odd){
+  background-color: #aaaaaa;
+}
+
+/* For medium screen */    
+@media (min-width: 768px) {
+    .row :nth-child(4n), .row :nth-child(4n-1) {
+        background: #dcdcdc;
+    }
+    .row :nth-child(4n-2), .row :nth-child(4n-3) {
+        background: #aaaaaa;
+    }
+}
+
+/* For large screen */
+@media (min-width: 992px) {
+    .row :nth-child(6n), .row :nth-child(6n-1), .row :nth-child(6n-2) {
+        background: #dcdcdc;
+    }
+    .row :nth-child(6n-3), .row :nth-child(6n-4), .row :nth-child(6n-5) {
+        background: white;
+    }
+}
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
