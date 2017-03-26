@@ -36,13 +36,32 @@ body {
   background-color: white;
 }
 
+
+.steps {
+      height:95%; 
+      width: 250px;
+}
 /* For medium screen */    
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .row :nth-child(4n), .row :nth-child(4n-1) {
         background:white;
     }
     .row :nth-child(4n-2), .row :nth-child(4n-3) {
         background: white;
+    }
+
+    .steps {
+          height:95%; 
+          width: 250px;
+    }
+}
+
+@media (min-width: 920px) {
+
+
+    .steps {
+      height: 95%; 
+      width: 20em;
     }
 }
 
