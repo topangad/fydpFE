@@ -36,11 +36,11 @@ body {
   background-color: white;
 }
 
-.steps {
-  height:95%; 
-  width: 90%;
-}
 
+.steps {
+      height:95%; 
+      width: 250px;
+}
 /* For medium screen */    
 @media (min-width: 768px) {
     .row :nth-child(4n), .row :nth-child(4n-1) {
@@ -52,7 +52,7 @@ body {
 
     .steps {
       height:95%; 
-      width: 250px;
+      width: 90%;
     }
 }
 
